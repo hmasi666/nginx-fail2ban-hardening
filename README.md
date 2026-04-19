@@ -71,3 +71,10 @@ Examples of targeted activity include:
 - traversal-style requests and suspicious execution attempts
 
 The goal is not to eliminate all risk, but to reduce noisy attack traffic, improve visibility, and create a maintainable baseline for a hardened public-facing service.
+
+## Repository Structure
+
+- `fail2ban/jail.d/` – example jail configurations
+- `fail2ban/filter.d/` – custom Fail2ban filters
+- `nginx/snippets/` – example Nginx hardening snippets
+- `docs/` – project notes and supporting documentation

@@ -78,3 +78,13 @@ The goal is not to eliminate all risk, but to reduce noisy attack traffic, impro
 - `fail2ban/filter.d/` – custom Fail2ban filters
 - `nginx/snippets/` – example Nginx hardening snippets
 - `docs/` – project notes and supporting documentation
+
+- ## Next Steps
+
+Possible future additions to this repository:
+
+- more custom Fail2ban filters
+- example jail tuning for different environments
+- additional Nginx hardening patterns
+- deployment notes for Flask/uWSGI-based services
+- example log samples for testing filters

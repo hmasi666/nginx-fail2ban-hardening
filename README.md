@@ -48,3 +48,26 @@ refining configurations
 All configurations were tested and adapted manually in a real server environment.
 
 Sensitive information such as real domains, IP addresses, and credentials has been removed from this public version.
+
+## Security Approach
+
+This project is based on a practical layered hardening model for a self-hosted Linux web service.
+
+The main idea is:
+
+- reduce exposure with Nginx hardening
+- detect malicious requests from logs
+- automatically ban abusive IP addresses with Fail2ban
+- document reusable filters and jail configurations
+
+Instead of relying only on default protections, this setup also includes custom filters for suspicious scan patterns and web attack behavior.
+
+Examples of targeted activity include:
+
+- SSH brute force attempts
+- repeated HTTP authentication failures
+- automated bot scanning for common admin paths
+- vulnerability probes targeting known web application files
+- traversal-style requests and suspicious execution attempts
+
+The goal is not to eliminate all risk, but to reduce noisy attack traffic, improve visibility, and create a maintainable baseline for a hardened public-facing service.
